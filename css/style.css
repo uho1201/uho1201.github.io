@@ -1,0 +1,171 @@
+*{margin:0; padding:0;}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+ color:#fff;
+     text-decoration:none;
+     cursor:pointer;
+}
+
+
+
+h1{
+    font-size: 300%;
+}
+
+.head-name{
+    margin-left: 10px;
+    padding: 15px;
+    position: relative;
+    left: 2%;
+    width: 250px;
+}
+
+
+/*.menu{
+    position: absolute;
+    left: 20px;
+    top:10px;
+}*/
+
+
+
+/*.menu ul li{
+    padding: 15px;
+    position: relative;
+    width: 150px;
+    vertical-align: middle;
+    background-color: #fff;
+    cursor: pointer;
+    border-top:1px solid #C71585;
+    transition: all;
+}*/
+
+
+
+.menu{
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    text-align: center;
+}
+
+
+
+
+.menu ul{
+    list-style: none;
+    position: absolute;
+    top:280px;
+    left: 58px;
+
+}
+
+.menu ul li {
+    padding: 0;
+    width: 150px;
+    border-top:1px solid #C71585;
+}
+
+
+.menu ul li:hover{
+    background-color: #808080;
+    /*left: 40px;*/
+}
+
+
+.menu > ul >li{
+    border-right:2px solid #C71585;
+
+}
+
+.menu ul ul{
+    transition: all 0.3s;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    left: 100%;
+    top:-2%;
+
+}
+
+.menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.menu ul li a{
+    display:block;
+    width: 100%; height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+
+}
+
+.menu > ul > li:hover > a{
+    color: #fff;
+}
+
+.menu > ul > li >ul >li:hover > a{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+table{
+    width: 15%;
+    position: absolute;
+    left: 47%;
+    margin-top: 10px;
+    margin-right:50px;
+}
+
+
+
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+
+td{
+    padding: 1px;
+    color: #fff;
+}
+
+td:hover{
+     z-index: 1;
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0,0,0,.5);
+
+
+}
+
+td:hover{
+    background: #C71585;
+    color:#fff;
+}
